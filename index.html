@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H517 Project 01 - Joseph Holt</title>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="header_area">
+            <h1 id="main_title">H517 Project 01</h1>
+            <span class="subtitle">Modernization of John Snow's 1854 Data Visualization</span>
+        </div>
+
+        <div class="main_div" id="map_area">
+            <div id="map_canvas">
+                <h2 class="section_title">Map</h2>
+                <span class="subtitle">Broad Street, Soho District, City of Westminster, London, England</span>
+                <svg id="map">
+
+                </svg>
+            </div>
+            <div id="map_details">
+                <div id="map_legend">
+                    <h3 class="section_title">Legend</h3>
+                    <p class="subtitle">Pumps</p>
+                    <p class="subtitle">Death</p>
+                    <svg id="legend"></svg>
+                </div>
+
+                <div id="map_controls">
+                    <h3 class="section_title">Controls</h3>
+                    <div id="pan">
+                        <p class="subtitle">Pan</p>
+                        <button id="pan_up" onclick="changePan(15, 'Y')"> Up </button>
+                        <button id="pan_left" onclick="changePan(-15, 'X')"> Left </button>
+                        <button id="pan_right" onclick="changePan(15, 'X')"> Right </button>
+                        <button id="pan_down" onclick="changePan(-15, 'Y')"> Down </button>
+                        <button id="pan_center" onclick="changePan(0, 'C')"> Center </button>
+                    </div>
+                    <div id="zoom">
+                        <p class="subtitle">Zoom</p>
+                        <button id="zoom_in" onclick="changeScale(3)"> In </button>
+                        <button id="zoom_out" onclick="changeScale(-3)"> Out </button>
+                        <button id="zoom_default" onclick="changeScale(0)"> Default </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_div" id="graph_area">
+            <h2 class="section_title">Graphs</h2>
+            <span class="subtitle"></span>
+            <svg id="timeline">
+                <g></g>
+            </svg>
+        </div>
+
+        <div id="footer_area">
+            <p>Design and code by Joseph Holt</p>
+            <p>Data provided by Khairi Reda via <a href="khreda.com/teaching/2020/H517/project1">khreda.com/teaching/2020/H517/project1</a></p>
+            <p>Documentation at <a href="documentation.html">documentation.html</a></p>
+        </div>
+    </body>
+    <script src="visualization.js"></script>
+</html>

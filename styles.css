@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+#wrapper {
+    padding: 10px;
+}
+
+#header_area {
+    height: 10vh;
+    background-color: rgba(0, 0, 0, .15);
+    padding: 1vh 1vw;
+}
+
+#main_title, #header_area .subtitle {
+    font-size: 150%;
+    margin: 0;
+}
+
+.section_title {
+    margin: 0;
+    padding: 2.5px 0 1px 5px;
+}
+
+.main_div span {
+    padding-left: 5px;
+}
+
+.main_div {
+    height: 78vh;
+    position: fixed;
+    z-index: 1;
+    top: 15vh;
+    margin: 0 0.5vw 0 0.5vw;
+    overflow-x: hidden;
+    border: 2.5px solid black;
+}
+
+#map_area {
+    left: 0;
+    width: 48.5vw;
+}
+
+#map_area #subtitle {
+    padding-bottom: 1px;
+}
+
+#map_canvas {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    height: 95%;
+    float: left;
+}
+
+#map {
+    top: 10%;
+    width: 100%;
+    height: 95%;
+    border: 1px solid black;
+}
+
+#map line {
+    stroke: black;
+    z-index: 2;
+}
+
+#map circle, #legend circle {
+    fill: blue;
+    stroke: black;
+    z-index: 3;
+}
+
+#map rect, #legend rect {
+    fill: red;
+    stroke: black;
+    z-index: 4;
+}
+
+#map_details {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 28.5%;
+    height: 92.5%;
+}
+
+#map_details .section_title{
+    padding: 0;
+}
+
+#map_legend .subtitle {
+    width: 33%;
+    margin: 5% 0;
+}
+
+#legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    width: 50%;
+    height: 20%;
+}
+
+#map_controls {
+    margin-top: 20%;
+}
+
+#graph_area {
+    right: 0;
+    width: 48.5vw;
+}
+
+#timeline {
+    position: absolute;
+    width: 98%;
+    height: 33%;
+}
+
+#footer_area {
+    margin: 0;
+    padding: 2vh 0;
+    height: 1vh;
+    width: 100vw;
+    position: fixed;
+    top: 95vh;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#footer_area p {
+    margin: 0 1vw;
+    font-style: italic;
+    float: left;
+}
